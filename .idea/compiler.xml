@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="coin-gateway-server" />
+        <module name="coin-common" />
+        <module name="finance-service" />
+        <module name="chan-api" />
+        <module name="statistic-service" />
+        <module name="admin-service" />
+        <module name="exchang-api" />
+        <module name="coin-authorazition-server" />
+        <module name="member-service" />
+        <module name="finance-api" />
+        <module name="statistic-api" />
+        <module name="engine-api" />
+        <module name="admin-api" />
+        <module name="exchage-service" />
+        <module name="merber-api" />
+        <module name="coin-task" />
+        <module name="engine-service" />
+        <module name="chan-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="coin-authorization-server" target="1.5" />
+      <module name="merber-service" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-api" options="-parameters" />
+      <module name="admin-service" options="-parameters" />
+      <module name="chan-api" options="-parameters" />
+      <module name="chan-service" options="-parameters" />
+      <module name="coin-authorazition-server" options="-parameters" />
+      <module name="coin-common" options="-parameters" />
+      <module name="coin-gateway-server" options="-parameters" />
+      <module name="coin-task" options="-parameters" />
+      <module name="engine-api" options="-parameters" />
+      <module name="engine-service" options="-parameters" />
+      <module name="exchage-service" options="-parameters" />
+      <module name="exchang-api" options="-parameters" />
+      <module name="finance-api" options="-parameters" />
+      <module name="finance-service" options="-parameters" />
+      <module name="member-service" options="-parameters" />
+      <module name="merber-api" options="-parameters" />
+      <module name="statistic-api" options="-parameters" />
+      <module name="statistic-service" options="-parameters" />
+    </option>
+  </component>
+</project>

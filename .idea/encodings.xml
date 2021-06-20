@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/coin-admin/admin-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-admin/admin-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-admin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-chan/chan-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-chan/chan-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-chan/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-chan/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-engine/engine-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-engine/engine-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-engine/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-engine/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-exchange-engine/exchage-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-exchange-engine/exchang-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-exchange-engine/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-exchange-engine/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-finance/finance-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-finance/finance-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-finance/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-finance/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-iass/coin-authorazition-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-iass/coin-gateway-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-iass/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-iass/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-member/member-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-member/merber-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-member/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-member/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-statistic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-statistic/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-statistic/statistic-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-statistic/statistic-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-task/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
