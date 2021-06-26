@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>coin-admin</artifactId>
-        <groupId>com.exchange</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>com.bjsxt</groupId>
+        <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -13,18 +13,46 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.exchange</groupId>
+            <groupId>com.bjsxt</groupId>
             <artifactId>admin-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.bjsxt</groupId>
+            <artifactId>member-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.bjsxt</groupId>
+            <artifactId>coin-common</artifactId>
+            <version>1.0</version>
+        </dependency>
+<!--           阿里云对象存储-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alicloud-oss</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.exchange</groupId>
-            <artifactId>coin-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>com.bjsxt</groupId>
+            <artifactId>member-api</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
+
+        <!--mapStruct依赖 高性能对象映射-->
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-jdk8</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+        </dependency>
+
     </dependencies>
 
-   <!-- 添加打包插件后面要单独运行-->
     <build>
         <plugins>
             <plugin>
@@ -33,4 +61,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
