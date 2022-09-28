@@ -40,13 +40,13 @@ public class AuthorizationConfig extends AuthorizationServerConfigurerAdapter {
                 .withClient("coin-api")
                 .secret(passwordEncoder.encode("coin-secret"))
                 .scopes("all")
-                .authorizedGrantTypes("password","refresh")
+                .authorizedGrantTypes("password","refresh_token")
                 .accessTokenValiditySeconds(24 * 7200)
                 .refreshTokenValiditySeconds(7 *  24 * 7200)
                 .and()
                 .withClient("inside-app")
                 .secret(passwordEncoder.encode("inside-secret"))
-                .secret("all")
+                .scopes("all")
                 .authorizedGrantTypes("client_credentials")
                 .accessTokenValiditySeconds(7 * 24 *3600) ;
 
