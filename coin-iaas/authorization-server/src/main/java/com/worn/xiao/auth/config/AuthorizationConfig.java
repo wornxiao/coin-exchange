@@ -1,6 +1,7 @@
 package com.worn.xiao.auth.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -27,7 +28,7 @@ public class AuthorizationConfig extends AuthorizationServerConfigurerAdapter {
     @Autowired
     private AuthenticationManager authenticationManager ;
 
-    @Autowired
+    @Qualifier(value = "userDetailServiceImpl")
     private UserDetailsService userDetailsService ;
 
     /**
@@ -41,7 +42,15 @@ public class AuthorizationConfig extends AuthorizationServerConfigurerAdapter {
                 .scopes("all")
                 .authorizedGrantTypes("password","refresh")
                 .accessTokenValiditySeconds(24 * 7200)
-                .refreshTokenValiditySeconds(7 *  24 * 7200) ;
+                .refreshTokenValiditySeconds(7 *  24 * 7200)
+                .and()
+                .withClient("inside-app")
+                .secret(passwordEncoder.encode("inside-secret"))
+                .secret("all")
+                .authorizedGrantTypes("client_credentials")
+                .accessTokenValiditySeconds(7 * 24 *3600) ;
+
+        super.configure(clients);
     }
 
     /**

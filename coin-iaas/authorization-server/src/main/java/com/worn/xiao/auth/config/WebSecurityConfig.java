@@ -38,17 +38,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
-    /**
-     * 创建一个测试的UserDetail
-     * @return
-     */
-    @Bean
-    public UserDetailsService userDetailsService() {
-        InMemoryUserDetailsManager inMemoryUserDetailsManager = new InMemoryUserDetailsManager();
-        User user = new User("admin", "123456", Arrays.asList(new SimpleGrantedAuthority("ROLE_ADMIN"))) ;
-        inMemoryUserDetailsManager.createUser(user);
-        return inMemoryUserDetailsManager;
-    }
 
     /**
      * 注入密码的验证管理器
