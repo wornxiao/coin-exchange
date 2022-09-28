@@ -7,20 +7,17 @@ spring:
     active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.189.133:3307/coin-exchange
+    url: jdbc:mysql://192.168.189.133:3306/coin-exchange
     username: root
     password: 123456
   redis:
     host: 192.168.189.133
     port: 6379
-    password: 123456
+    password:
   cloud:
     nacos:
       discovery:
         server-addr: nacos-server:8848
-      config:
-        enabled: false
-        file-extension: yaml
     sentinel:
       transport:
         dashboard: sentinel-dashboard:8858

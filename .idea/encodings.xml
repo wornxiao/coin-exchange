@@ -10,31 +10,31 @@
     <file url="file://$PROJECT_DIR$/coin-chan/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/coin-chan/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/coin-common/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-engine/engine-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-engine/engine-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-engine/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-engine/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-exchange-engine/exchage-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-exchange-engine/exchang-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-exchange-engine/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-exchange-engine/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/coin-finance/finance-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/coin-finance/finance-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/coin-finance/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/coin-finance/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-iass/coin-authorazition-server/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-iass/coin-gateway-server/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-iass/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-iass/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-iaas/authorization-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-iaas/gateway-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-iaas/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-iaas/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-member/member-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/coin-member/member-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-member/merber-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/coin-member/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/coin-member/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-statistic/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-statistic/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-statistic/statistic-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/coin-statistic/statistic-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-statistics/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-statistics/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-statistics/statistics-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coin-statistics/statistics-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/coin-task/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exchange-engine/exchange-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exchange-engine/exchange-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exchange-engine/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exchange-engine/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/match-engine/match-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/match-engine/match-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/match-engine/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/match-engine/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
