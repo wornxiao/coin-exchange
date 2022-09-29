@@ -21,7 +21,6 @@ spring:
     sentinel:
       transport:
         dashboard: sentinel-dashboard:8858
-
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
@@ -46,3 +45,13 @@ jetcache:
       host: ${spring.redis.host}
       port: ${spring.redis.port}
       password:  ${spring.redis.password}
+
+swagger2:
+  basePackage: com.worn.xiao.common.controller
+  name: worn.xiao
+  url:
+  email:
+  title: coin-common公共模块
+  description: coin-common公共模块
+  version: 2.0
+  termsOfServiceUrl: www.wornxiao.com

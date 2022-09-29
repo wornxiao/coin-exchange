@@ -1,6 +1,7 @@
 package com.worn.xiao.common.swagger;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,6 +22,7 @@ import java.util.List;
 @EnableConfigurationProperties(SwaggerProperties.class)
 public class SwaggerAutoConfiguration {
 
+    @Autowired
     private SwaggerProperties swaggerProperties;
 
     public SwaggerAutoConfiguration(SwaggerProperties swaggerProperties) {
