@@ -1,5 +1,6 @@
 package com.worn.xiao.common.aspect;
 
+import cn.hutool.core.lang.Snowflake;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.URLUtil;
 import com.alibaba.fastjson.JSON;
@@ -13,6 +14,7 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.LocalVariableTableParameterNameDiscoverer;
 import org.springframework.core.annotation.Order;
 import org.springframework.security.core.Authentication;
@@ -23,6 +25,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
+import java.util.Date;
 import java.util.HashMap;
 
 @Aspect
@@ -30,6 +33,19 @@ import java.util.HashMap;
 @Order(1)
 @Slf4j
 public class WebLogAspect {
+
+
+    /**
+     * 雪花算法
+     * 1 : 机器的id
+     * 2 : 应用的id
+     */
+    private Snowflake snowflake = new Snowflake(1,1) ;
+
+    /**
+     * 日志记录：
+     *  环绕通知：方法执行之前、之后
+     */
 
     @Pointcut("execution( * com.worn.xiao.common.controller.*.*(..))")
     public void webLog() {

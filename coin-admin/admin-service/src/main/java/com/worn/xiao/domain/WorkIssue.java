@@ -65,10 +65,9 @@ public class WorkIssue {
     /**
      * 状态：1-待回答；2-已回答；
      */
-    @TableField(value = "`status`")
+    @TableField(value = "status")
     @ApiModelProperty(value="状态：1-待回答；2-已回答；")
-    private Boolean status;
-
+    private Integer status;
     /**
      * 修改时间
      */
@@ -82,4 +81,13 @@ public class WorkIssue {
     @TableField(value = "created")
     @ApiModelProperty(value="创建时间")
     private Date created;
+
+    @TableField(exist = false)
+    @ApiModelProperty(value = "创建工单的用户名称")
+    public String username ="测试用户" ;
+
+
+    @TableField(exist = false)
+    @ApiModelProperty(value = "创建工单的用户真实名称")
+    private String realName= "测试用户" ;
 }
