@@ -14,6 +14,7 @@ import com.worn.xiao.service.SysMenuService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -21,7 +22,9 @@ import org.springframework.security.jwt.Jwt;
 import org.springframework.security.jwt.JwtHelper;
 import org.springframework.stereotype.Service;
 
+import java.sql.Time;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 @Service
@@ -36,6 +39,9 @@ public class SysLoginServiceImpl implements SysLoginService {
 
     @Value("${basic.token:Basic Y29pbi1hcGk6Y29pbi1zZWNyZXQ=}")
     private String basicToken ;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
     /**
      * 登录的实现
      *
@@ -67,6 +73,8 @@ public class SysLoginServiceImpl implements SysLoginService {
         List<SimpleGrantedAuthority> authorities = authoritiesJsonArray.stream() // 组装我们的权限数据
                 .map(authorityJson->new SimpleGrantedAuthority(authorityJson.toString()))
                 .collect(Collectors.toList());
+
+        redisTemplate.opsForValue().set(token,30, TimeUnit.MINUTES);
         return new LoginResult(token, menus, authorities);
     }
 }
