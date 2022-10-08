@@ -73,8 +73,8 @@ public class SysLoginServiceImpl implements SysLoginService {
         List<SimpleGrantedAuthority> authorities = authoritiesJsonArray.stream() // 组装我们的权限数据
                 .map(authorityJson->new SimpleGrantedAuthority(authorityJson.toString()))
                 .collect(Collectors.toList());
-
-        redisTemplate.opsForValue().set(token,30, TimeUnit.MINUTES);
-        return new LoginResult(token, menus, authorities);
+        LoginResult loginResult = new LoginResult(token, menus, authorities);
+        redisTemplate.opsForValue().set(token,JSONObject.toJSONString(loginResult),30L, TimeUnit.MINUTES);
+        return loginResult;
     }
 }

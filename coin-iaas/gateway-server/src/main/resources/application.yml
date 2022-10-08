@@ -21,7 +21,7 @@ spring:
           uri: lb://member-service
           predicates:
             - Path=/user/**
-    sentinel:2
+    sentinel:
       transport:
         dashboard: sentinel-dashboard:8858
       filter:
