@@ -1,6 +1,7 @@
 package com.worn.xiao.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.worn.xiao.common.constant.R;
 import com.worn.xiao.domain.AdminBank;
 import com.worn.xiao.service.AdminBankService;
 import io.swagger.annotations.Api;
@@ -9,9 +10,8 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
 
 @RestController

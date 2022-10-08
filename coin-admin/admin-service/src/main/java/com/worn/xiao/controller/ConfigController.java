@@ -1,5 +1,8 @@
 package com.worn.xiao.controller;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.worn.xiao.common.constant.R;
+import com.worn.xiao.domain.Config;
 import com.worn.xiao.service.ConfigService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -7,7 +10,9 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.annotations.ApiIgnore;
 
 @RestController
 @RequestMapping("/configs")
@@ -40,7 +45,7 @@ public class ConfigController {
             @ApiImplicitParam(name = "config",value = "config 的json数据")
     })
     @PreAuthorize("hasAuthority('config_create')")
-    public R add(@RequestBody @Validated  Config config){
+    public R add(@RequestBody @Validated Config config){
         boolean save = configService.save(config);
         if(save){
             return R.ok() ;
