@@ -24,7 +24,7 @@ import java.util.Set;
 @Component
 public class TokenCheckFilter implements GlobalFilter, Ordered {
 
-    @Value("${no.token.access.urls:/admin/login,/admin/validate/code}")
+    @Value("${no.token.access.urls:/admin/login,/admin/validate/code,/user/users/register,/user/sms/sendTo}")
     private Set<String> noTokenAccessUrls;
 
     @Autowired
@@ -40,10 +40,11 @@ public class TokenCheckFilter implements GlobalFilter, Ordered {
         if(StringUtils.isBlank(token)){ //如果token不存在
             return buildUnAuthSuccess(exchange);
         }
-        Boolean hasKey = redisTemplate.hasKey(token);
+        //这里为了避免非登录认证通过的
+      /*  Boolean hasKey = redisTemplate.hasKey(token);
         if (hasKey==null || !hasKey) { //验证token是否正确
             return buildUnAuthSuccess(exchange);
-        }
+        }*/
         return chain.filter(exchange);
     }
 

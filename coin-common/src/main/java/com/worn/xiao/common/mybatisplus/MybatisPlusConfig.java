@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@MapperScan(value = "com.worn.xiao.mapper")
+@MapperScan(value ={"com.worn.xiao.mapper","com.worn.xiao.common.mapper"})
 public class MybatisPlusConfig {
 
 

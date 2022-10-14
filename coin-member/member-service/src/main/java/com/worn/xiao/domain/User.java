@@ -7,6 +7,8 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.Date;
+
+import io.swagger.models.auth.In;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -95,7 +97,7 @@ public class User {
      */
     @TableField(value = "id_card_type")
     @ApiModelProperty(value="证件类型:1，身份证；2，军官证；3，护照；4，台湾居民通行证；5，港澳居民通行证；9，其他；")
-    private Boolean idCardType;
+    private Integer idCardType;
 
     /**
      * 认证状态：0-未认证；1-初级实名认证；2-高级实名认证
@@ -229,4 +231,12 @@ public class User {
     @TableField(value = "created")
     @ApiModelProperty(value="创建时间")
     private Date created;
+
+    @TableField(exist = false)
+    @ApiModelProperty(value="高级认证状态")
+    private Byte seniorAuthStatus;
+
+    @TableField(exist = false)
+    @ApiModelProperty(value="高级认证状态描述")
+    private String seniorAuthDesc;
 }

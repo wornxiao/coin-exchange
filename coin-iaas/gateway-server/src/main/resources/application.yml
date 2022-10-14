@@ -17,10 +17,20 @@ spring:
           uri: lb://admin-service   # 转发到那个目的地
           predicates:
             - Path=/admin/**
+          filters:
+            - StripPrefix=1
         - id: member-service_router
           uri: lb://member-service
           predicates:
             - Path=/user/**
+          filters:
+            - StripPrefix=1
+        - id: finance-service_router
+          uri: lb://finance-service
+          predicates:
+            - Path=/finance/**
+          filters:
+            - StripPrefix=1
     sentinel:
       transport:
         dashboard: sentinel-dashboard:8858

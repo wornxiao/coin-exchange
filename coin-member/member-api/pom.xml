@@ -11,5 +11,12 @@
 
     <artifactId>member-api</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.worn</groupId>
+            <artifactId>coin-common</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 </project>

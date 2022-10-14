@@ -23,6 +23,11 @@
             <artifactId>coin-common</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.worn</groupId>
+            <artifactId>member-api</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <!--独立打包插件-->

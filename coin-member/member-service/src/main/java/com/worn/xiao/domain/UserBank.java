@@ -103,4 +103,11 @@ public class UserBank {
     @TableField(value = "created")
     @ApiModelProperty(value="创建时间")
     private Date created;
+
+    /**
+     * 创建时间
+     */
+    @TableField(value = "pay_password")
+    @ApiModelProperty(value="支付密码")
+    private String payPassword;
 }
